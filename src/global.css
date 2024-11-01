@@ -12,8 +12,19 @@
   --terciary: #AFAFAF
 }
 
+@font-face {
+  font-family: 'BankGothic';
+  src: url('../src/assets/fonts/BankGothic-Md-BT.ttf') format('truetype');
+}
+
 .secondary {
   color: var(--secondary);
+}
+
+strong span {
+  font-family: 'BankGothic', sans-serif;
+  color: var(--secondary);
+  font-size: 2rem;
 }
 
 :focus {
