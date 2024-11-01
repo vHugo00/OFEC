@@ -1,10 +1,21 @@
+@font-face {
+  font-family: 'BankGothic';
+  src: url('../assets/fonts/BankGothic-Md-BT.ttf') format('truetype');
+}
+
 .header {
   background: var(--gray-800);
   display: flex;
-  justify-content: center;
-  padding: 1.25rem 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 6rem;
 }
 
 .header img {
   height: 2rem;
+}
+
+h1 {
+  font-family: 'BankGothic', sans-serif;
+  color: var(--secondary);
 }
