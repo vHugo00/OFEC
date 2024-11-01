@@ -11,22 +11,23 @@ export function UsedSpaceWidget() {
       </div>
 
       <div className="h-2 rounded-full bg-violet-100 dark:bg-zinc-600">
-        <div className="h-2 w-3/4 rounded-full bg-violet-600 dark:bg-violet-400" />
+        <div className="h-2 w-3/4 rounded-full bg-minha-cor dark:bg-minha-cor" />
       </div>
 
       <div className="flex gap-3">
+
+        <button
+          type="button"
+          className="text-sm font-medium text-violet-700 dark:text-minha-cor"
+        >
+          Atualizar
+        </button>
+
         <button
           type="button"
           className="text-sm font-medium text-violet-500 dark:text-violet-300"
         >
           Saiba mais
-        </button>
-
-        <button
-          type="button"
-          className="text-sm font-medium text-violet-700 dark:text-zinc-300"
-        >
-          Atualizar
         </button>
       </div>
     </div>
