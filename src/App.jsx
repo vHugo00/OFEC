@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { Calendar } from "./components/Sidebar/Calendar/Calendar";
+import { Games } from "./components/Sidebar/Games/Games";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <div className="col-span-3 w-full">1</div>
 
           <div className="col-span-1 w-full">
+            <Games />
             <Calendar />
           </div>
         </div>
