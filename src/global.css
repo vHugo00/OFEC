@@ -37,3 +37,16 @@ button {
   font-weight: 400;
   font-size: 1rem;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181B;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #27272A;
+  border-radius: 10px;
+}
