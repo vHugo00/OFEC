@@ -18,15 +18,28 @@ function App() {
           <div className="col-span-3 w-full">
             <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100 mb-4">Produtos</h2>
             <div className="grid grid-cols-3 gap-4">
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              <Product
+                image="../src/assets/images/camisa-oficial-do-operario-ferroviario-2024-listrado.png"
+                product="Camisa oficial do Operário Ferroviario 2024 - Listrado"
+                email="vv001226@gmail.com"
+                price="R$ 89,90"
+              />
+              <Product
+                image="../src/assets/images/camisa-oficial-do-operario-ferroviario-2024-branco.png"
+                product="Camisa oficial do Operário Ferroviario 2024 - Branco"
+                email="vv001226@gmail.com"
+                price="R$ 89,90"
+              />
+              <Product
+                image="../src/assets/images/camisa-comissao-tecnica-treino-operario-2024.png"
+                product="Camisa Comissão Técnica Treino Operário 2024"
+                email="vv001226@gmail.com"
+                price="R$ 89,90"
+              />
+
             </div>
 
-            <div className="mt-4 space-y-4">
+            <div className="mt-8 space-y-4">
               <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>
               <Product />
               <Product />

@@ -26,6 +26,16 @@ export function Calendar() {
 
   const renderDays = () => {
     const days = [];
+
+    // Determina em que dia da semana o primeiro dia do mês cai
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
+
+    // Adiciona elementos vazios até alinhar o primeiro dia corretamente
+    for (let i = 0; i < firstDayOfMonth; i++) {
+      days.push(<div key={`empty-${i}`} className="p-2 w-full h-12"></div>);
+    }
+
+    // Adiciona os dias do mês
     for (let day = 1; day <= daysInMonth; day++) {
       const isPast = day < currentDay;
       const gameDay = isGameDay(day);
@@ -46,13 +56,15 @@ export function Calendar() {
         </div>
       );
     }
+
     return days;
   };
 
   return (
     <div className="p-4 border bg-zinc-100 border-zinc-200 rounded-lg dark:border-zinc-800 dark:bg-zinc-900 w-full">
+      <span className="flex justify-center text-md font-semibold text-zinc-700 dark:text-zinc-100">Novembro  -  {currentYear}</span>
       <div className="grid grid-cols-7 gap-2 mb-2 w-full relative">
-        <div className="absolute bottom-[-10px] left-0 w-[95%] h-[1px] bg-gray-300 dark:bg-zinc-800 mx-auto" style={{ right: 0 }}></div>
+        <div className="absolute  bottom-[-10px] left-0 w-[95%] h-[1px] bg-gray-300 dark:bg-zinc-800 mx-auto" style={{ right: 0 }}></div>
         {weekDays.map((day, index) => (
           <div
             key={index}
