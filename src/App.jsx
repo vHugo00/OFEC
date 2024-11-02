@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Product } from "./components/Products/Product";
 import { Sidebar } from "./components/Sidebar";
 import { Calendar } from "./components/Sidebar/Calendar/Calendar";
 import { Games } from "./components/Sidebar/Games/Games";
@@ -14,7 +15,26 @@ function App() {
         <Header />
 
         <div className="grid grid-cols-4 gap-4 w-full mt-12">
-          <div className="col-span-3 w-full">1</div>
+          <div className="col-span-3 w-full">
+            <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100 mb-4">Produtos</h2>
+            <div className="grid grid-cols-3 gap-4">
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+            </div>
+
+            <div className="mt-4 space-y-4">
+              <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>
+              <Product />
+              <Product />
+              <Product />
+
+            </div>
+
+          </div>
 
           <div className="col-span-1 w-full">
             <Games />
