@@ -1,3 +1,4 @@
+import { LearnMore } from "./components/Button/LearnMore";
 import { Header } from "./components/Header";
 import { News } from "./components/News/News.JSX";
 import { Product } from "./components/Products/Product";
@@ -45,8 +46,11 @@ function App() {
               />
 
             </div>
+            <LearnMore
+              link="https://www.operarioferroviario.com.br/"
+            />
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-16 space-y-4">
               <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>
               <News
                 image="https://via.placeholder.com/150"
@@ -69,6 +73,8 @@ function App() {
                 date="01 Nov 2024"
                 link="https://example.com/news-article"
               />
+              <LearnMore
+                link="https://example.com/news-article" />
             </div>
 
           </div>
