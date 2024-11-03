@@ -83,7 +83,7 @@ function App() {
 
           <div className="col-span-1 w-full">
             <Games
-              date="Sábado, 09/11"
+              date="Sábado - 09/11"
               time="17:00"
               teamA={{ name: "Novorizontino", logo: NovorizontinoLogo }}
               teamB={{ name: "Operário", logo: OperarioLogo }} />
