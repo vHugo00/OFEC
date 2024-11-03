@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { News } from "./components/News/News.JSX";
 import { Product } from "./components/Products/Product";
 import { Sidebar } from "./components/Sidebar";
 import { Calendar } from "./components/Sidebar/Calendar/Calendar";
@@ -47,10 +48,27 @@ function App() {
 
             <div className="mt-8 space-y-4">
               <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>
-              <Product />
-              <Product />
-              <Product />
-
+              <News
+                image="https://via.placeholder.com/150"
+                title="Breaking News: New Tech Innovation"
+                summary="lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas."
+                date="03 Nov 2024"
+                link="https://example.com/news-article"
+              />
+              <News
+                image="https://via.placeholder.com/150"
+                title="Breaking News: New Tech Innovation"
+                summary="lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas."
+                date="02 Nov 2024"
+                link="https://example.com/news-article"
+              />
+              <News
+                image="https://via.placeholder.com/150"
+                title="Breaking News: New Tech Innovation"
+                summary="lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas."
+                date="01 Nov 2024"
+                link="https://example.com/news-article"
+              />
             </div>
 
           </div>

@@ -7,7 +7,7 @@ Product.propTypes = {
   product: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   coins: PropTypes.number.isRequired,
-  purchaseLink: PropTypes.string.isRequired, // Link para a página de compra
+  purchaseLink: PropTypes.string.isRequired
 };
 
 export function Product({
