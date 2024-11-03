@@ -5,6 +5,8 @@ import { Product } from "./components/Products/Product";
 import { Sidebar } from "./components/Sidebar";
 import { Calendar } from "./components/Sidebar/Calendar/Calendar";
 import { Games } from "./components/Sidebar/Games/Games";
+import NovorizontinoLogo from './assets/images/novorizontino.png'
+import OperarioLogo from './assets/images/ofec.png'
 
 function App() {
   return (
@@ -80,7 +82,11 @@ function App() {
           </div>
 
           <div className="col-span-1 w-full">
-            <Games />
+            <Games
+              date="Sábado, 09/11"
+              time="17:00"
+              teamA={{ name: "Novorizontino", logo: NovorizontinoLogo }}
+              teamB={{ name: "Operário", logo: OperarioLogo }} />
             <Calendar />
           </div>
         </div>
