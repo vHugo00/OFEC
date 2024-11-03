@@ -1,4 +1,4 @@
-import { LifeBuoy, Cog, Menu } from 'lucide-react';
+import { Cog, Menu } from 'lucide-react';
 import { Logo } from './Logo';
 import { Profile } from './Profile';
 import { Navigation } from './Navigation';
@@ -29,7 +29,6 @@ export function Sidebar() {
 
           <div className="mt-auto flex flex-col gap-6">
             <nav className="flex flex-col gap-1">
-              <NavItem icon={LifeBuoy} title="Suporte" />
               <NavItem icon={Cog} title="Configurações" />
             </nav>
 
