@@ -10,18 +10,18 @@ import OperarioLogo from './assets/images/ofec.png'
 
 function App() {
   return (
-    <div className="grid min-h-screen grid-cols-app bg-zinc-50 dark:bg-zinc-900 lg:grid lg:grid-cols-app">
-      <aside className="relative min-h-screen dark:bg-zinc-900 lg:grid lg:grid-cols-app">
+    <div className="grid min-h-screen bg-zinc-50 dark:bg-zinc-900 grid-cols-1 md:grid-cols-2 lg:grid-cols-app">
+      <aside className="relative min-h-screen dark:bg-zinc-900 hidden md:block">
         <Sidebar />
       </aside>
 
-      <main className="w-full min-h-screen px-4 pb-12 pt-24 lg:col-start-2 lg:px-8 lg:pt-8">
+      <main className="w-full min-h-screen px-4 pb-12 pt-24 md:col-start-2 md:px-6 lg:px-8 lg:pt-8">
         <Header />
 
-        <div className="grid grid-cols-4 gap-4 w-full mt-12">
+        <div className="grid grid-cols-1 gap-4 w-full mt-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="col-span-3 w-full">
             <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100 mb-4">Produtos</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <Product
                 purchaseLink="https://www.operarioferroviario.com.br/"
                 image="../src/assets/images/M13PYF01A5.avif"
@@ -46,11 +46,8 @@ function App() {
                 price="R$ 189,90"
                 coins="150"
               />
-
             </div>
-            <LearnMore
-              link="https://www.operarioferroviario.com.br/"
-            />
+            <LearnMore link="https://www.operarioferroviario.com.br/" />
 
             <div className="mt-16 space-y-4">
               <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>
@@ -75,18 +72,17 @@ function App() {
                 date="01 Nov 2024"
                 link="https://example.com/news-article"
               />
-              <LearnMore
-                link="https://example.com/news-article" />
+              <LearnMore link="https://example.com/news-article" />
             </div>
-
           </div>
 
-          <div className="col-span-1 w-full">
+          <div className="col-span-4 md:col-span-1 lg:col-span-1 w-full">
             <Games
               date="Sábado - 09/11"
               time="17:00"
               teamA={{ name: "Novorizontino", logo: NovorizontinoLogo }}
-              teamB={{ name: "Operário", logo: OperarioLogo }} />
+              teamB={{ name: "Operário", logo: OperarioLogo }}
+            />
             <Calendar />
           </div>
         </div>
