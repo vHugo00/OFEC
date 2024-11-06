@@ -11,7 +11,6 @@ export function Calendar() {
     { date: new Date(currentYear, currentMonth, 9), opponent: "Time B" },
     { date: new Date(currentYear, currentMonth, 15), opponent: "Time C" },
     { date: new Date(currentYear, currentMonth, 24), opponent: "Time D" },
-    // Adicione mais jogos aqui
   ];
 
   const getDaysInMonth = (year, month) => {
@@ -27,15 +26,12 @@ export function Calendar() {
   const renderDays = () => {
     const days = [];
 
-    // Determina em que dia da semana o primeiro dia do mês cai
     const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
 
-    // Adiciona elementos vazios até alinhar o primeiro dia corretamente
     for (let i = 0; i < firstDayOfMonth; i++) {
       days.push(<div key={`empty-${i}`} className="p-2 w-full h-12"></div>);
     }
 
-    // Adiciona os dias do mês
     for (let day = 1; day <= daysInMonth; day++) {
       const isPast = day < currentDay;
       const gameDay = isGameDay(day);
