@@ -5,12 +5,18 @@ import './global.css'
 
 import Home from './routes/Home.jsx'
 import Store from './routes/Store.jsx'
+import Events from './routes/Events.jsx'
+import Challengs from './routes/Challengs.jsx'
+import ErrorPage from './routes/ErrorPage.jsx'
+
+
 import App from './App.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -19,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: 'store',
         element: <Store />
+      },
+      {
+        path: 'events',
+        element: <Events />
+      },
+      {
+        path: 'challengs',
+        element: <Challengs />
       }
     ]
   }
