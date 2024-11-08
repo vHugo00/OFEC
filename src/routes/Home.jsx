@@ -39,7 +39,7 @@ function App() {
               coins="150"
             />
           </div>
-          <LearnMore link="https://www.operarioferroviario.com.br/" />
+          <LearnMore href="/store" />
 
           <div className="mt-16 space-y-4">
             <h2 className="text-2xl font-bold text-zinc-700 dark:text-zinc-100">Noticias</h2>

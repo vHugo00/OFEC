@@ -3,13 +3,13 @@ import { ArrowRight } from 'lucide-react';
 
 LearnMore.propTypes = {
   text: PropTypes.string,
-  link: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
 
-export function LearnMore({ text = "Saiba mais", link }) {
+export function LearnMore({ text = "Saiba mais", href }) {
   return (
     <a
-      href={link}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center mt-4 px-4 py-2 border border-zinc-700 rounded-lg bg-zinc-900 text-zinc-300 text-sm font-semibold transition-colors hover:bg-zinc-800 dark:bg-zinc-800 dark:border-zinc-600 dark:hover:bg-zinc-700"

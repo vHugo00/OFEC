@@ -13,7 +13,7 @@ export function Navigation() {
       <NavItem icon={Home} title="Inicio" href='/' />
       <NavItem icon={Store} title="Loja" href="/store" />
       <NavItem icon={SquareStack} title="Eventos" href='/events' />
-      <NavItem icon={CheckSquare} title="Desafios" href='challengs' />
+      <NavItem icon={CheckSquare} title="Desafios" href='/challengs' />
 
     </nav>
   )

@@ -11,6 +11,7 @@ import ErrorPage from './routes/ErrorPage.jsx'
 
 
 import App from './App.jsx'
+import Settings from './routes/Settings.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: 'challengs',
         element: <Challengs />
+      },
+      {
+        path: 'settings',
+        element: <Settings />
       }
     ]
   }
