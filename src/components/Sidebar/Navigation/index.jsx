@@ -12,7 +12,7 @@ export function Navigation() {
     <nav className="flex flex-col gap-0.5">
       <NavItem icon={Home} title="Inicio" href='/' />
       <NavItem icon={Store} title="Loja" href="/store" />
-      <NavItem icon={SquareStack} title="Eventos" href='/events' />
+      <NavItem icon={SquareStack} title="Notícias" href='/events' />
       <NavItem icon={CheckSquare} title="Desafios" href='/challengs' />
 
     </nav>
