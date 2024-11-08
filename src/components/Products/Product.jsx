@@ -1,5 +1,4 @@
 import { CoinsIcon } from 'lucide-react';
-import { Star } from 'lucide-react';
 import PropTypes from 'prop-types';
 
 Product.propTypes = {
@@ -37,12 +36,6 @@ export function Product({
           <span className="text-md font-semibold text-zinc-700 dark:text-zinc-100 mt-4">
             {product}
           </span>
-
-          <div className="flex mt-1">
-            {Array(5).fill().map((_, index) => (
-              <Star key={index} className="w-4 h-4 text-amber-500" />
-            ))}
-          </div>
 
           <span className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
             Por apenas:
