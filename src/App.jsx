@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
+import FloatingGhostButton from "./components/Button/FloatingGhostButton";
 
 
 
@@ -10,6 +11,7 @@ function App() {
       <Sidebar />
       <Header />
       <Outlet />
+      <FloatingGhostButton />
     </div>
   )
 }

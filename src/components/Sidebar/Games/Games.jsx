@@ -18,7 +18,7 @@ export function Games({ date, time, teamA, teamB }) {
     <div className="border rounded-lg border-zinc-200 dark:border-zinc-800 mb-2 pt-4">
       <div className="flex justify-center">
         <p className="text-zinc-400">
-          {date} - {time}
+          {date} {time}
         </p>
       </div>
       <div className="flex gap-4 justify-center p-4">
