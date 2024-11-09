@@ -25,7 +25,7 @@ function App() {
               price="R$ 189,90"
               coins="250"
             />
-            {/* <Product
+            <Product
               purchaseLink="https://www.operarioferroviario.com.br/"
               image="../src/assets/images/M13PYF01A6.jpg"
               product="Camisa Operário Ferroviário I 2024 Karilu"
@@ -40,7 +40,7 @@ function App() {
               email="vv001226@gmail.com"
               price="R$ 189,90"
               coins="150"
-            /> */}
+            />
           </div>
           <LearnMore href="/store" />
 
