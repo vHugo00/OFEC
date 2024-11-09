@@ -5,7 +5,7 @@ import './global.css'
 
 import Home from './routes/Home.jsx'
 import Store from './routes/Store.jsx'
-import Events from './routes/Events.jsx'
+import News from './routes/Social.jsx'
 import Challengs from './routes/Challengs.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element: <Store />
       },
       {
-        path: 'events',
-        element: <Events />
+        path: 'news',
+        element: <News />
       },
       {
         path: 'challengs',
