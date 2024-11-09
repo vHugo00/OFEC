@@ -72,7 +72,7 @@ const PenaltyShootout = () => {
   };
 
   return (
-    <div className=" grid grid-cols-4 gap-4">
+    <div className=" grid grid-cols-1 lg:grid-cols-4 gap-4 ">
       {/* Seção principal com o jogo de pênaltis e imagem de fundo */}
       <div
         className="col-span-3 flex flex-col items-center justify-center p-6 space-y-4 text-center"
