@@ -14,7 +14,7 @@ export function News({ image, title, summary, date, link }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-start border rounded-lg border-zinc-200 dark:border-zinc-800 mb-2 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors"
+      className="flex items-start border rounded-lg border-zinc-200 dark:border-zinc-800 mb-2 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors "
     >
       <img
         src={image}
